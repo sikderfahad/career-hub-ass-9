@@ -11,12 +11,10 @@ const FeaturedJob = () => {
   useEffect(() => {
     setJobData(data.slice(0, 4));
   }, []);
-  console.log(jobData);
 
   const handledSeeMore = () => {
     setJobData(data);
     setShowAll(true);
-    console.log(jobData);
     document.getElementById("seeAllBtn").classList.add("hidden");
   };
 

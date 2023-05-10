@@ -2,7 +2,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ToastMsg = () => {
-  toast.warn("Hay React I'm Here!", {
+  toast.warn("You already applied this job!", {
     position: "top-right",
     autoClose: 5000,
     hideProgressBar: false,
