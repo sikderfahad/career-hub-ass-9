@@ -21,4 +21,8 @@ const addToDb = (id) => {
   localStorage.setItem("job-cart", JSON.stringify(jobCart));
 };
 
-export { getJobCart, addToDb };
+const storeClean = () => {
+  localStorage.removeItem("job-cart");
+};
+
+export { getJobCart, addToDb, storeClean };

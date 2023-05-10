@@ -38,7 +38,6 @@ const JobDetailsPage = () => {
     navigate(`/applied-jobs/${id}`);
   };
 
-  console.log(findJobInfo);
   return (
     <div>
       <div className="details-container w-10/12 mx-auto mb-10">

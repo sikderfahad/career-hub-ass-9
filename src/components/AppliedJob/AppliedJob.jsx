@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { useLoaderData } from "react-router-dom";
-import { getJobCart } from "../MyDb/MyDb";
+import React, { useEffect, useState } from "react";
+import { getJobCart, storeClean } from "../MyDb/MyDb";
 import AppliedJobItem from "../AppliedJobItem/AppliedJobItem";
 import allData from "../../../public/data.json";
 
@@ -11,10 +10,15 @@ const AppliedJob = () => {
     const getStoredData = allData.find((pd) => pd.id === +jobId);
     matchingData.push(getStoredData);
   }
-  console.log(matchingData);
+
+  const handledStoreClear = () => {
+    matchingData.length = 0;
+    storeClean();
+    window.location.reload();
+  };
   return (
     <div className="w-10/12 mx-auto">
-      <div className="">
+      <div className="flex items-center justify-between">
         <h1 className="text-2xl text-purple-600 font-semibold my-8">
           You applied {matchingData.length} jobs!
         </h1>
@@ -24,7 +28,7 @@ const AppliedJob = () => {
           id="dropdownHoverButton"
           data-dropdown-toggle="dropdownHover"
           data-dropdown-trigger="hover"
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="text-[#474747] bg-[#F4F4F4] shadow-lg focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center "
           type="button"
         >
           Dropdown hover{" "}
@@ -58,7 +62,7 @@ const AppliedJob = () => {
                 href="#"
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
-                Dashboard
+                Onsite
               </a>
             </li>
             <li>
@@ -66,7 +70,7 @@ const AppliedJob = () => {
                 href="#"
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
-                Settings
+                Full Time
               </a>
             </li>
             <li>
@@ -74,15 +78,7 @@ const AppliedJob = () => {
                 href="#"
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
-                Earnings
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-              >
-                Sign out
+                Remote
               </a>
             </li>
           </ul>
@@ -94,6 +90,15 @@ const AppliedJob = () => {
         {matchingData.map((item) => (
           <AppliedJobItem item={item} key={item.id}></AppliedJobItem>
         ))}
+      </div>
+      <div className="my-20 text-right">
+        <button
+          onClick={handledStoreClear}
+          type="button"
+          className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        >
+          Remove History
+        </button>
       </div>
     </div>
   );
