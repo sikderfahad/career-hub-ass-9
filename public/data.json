@@ -59,9 +59,9 @@
     "location": "Toronto, Canada",
     "salary": "$80,000 - $100,000",
     "description": "We are seeking a data scientist to join our analytics team...",
-    "responsibility": "Responsibilities include developing and implementing data models and algorithms...",
-    "education": "Master's or PhD in Mathematics, Statistics or related field",
-    "experience": "Minimum of 5 years of experience in data science",
+    "responsibilities": "Responsibilities include developing and implementing data models and algorithms...",
+    "educationRequirements": "Master's or PhD in Mathematics, Statistics or related field",
+    "experienceRequirements": "Minimum of 5 years of experience in data science",
     "contact": {
       "phone": "+1 416-123-4567",
       "email": "careers@analyticsinc.com"
@@ -76,9 +76,9 @@
     "location": "London, UK",
     "salary": "$60,000 - $80,000",
     "description": "We are looking for a skilled frontend developer to join our team...",
-    "responsibility": "Responsibilities include developing and implementing user-friendly web applications...",
-    "education": "Bachelor's or Master's degree in Computer Science or related field",
-    "experience": "Minimum of 3 years of experience in frontend development",
+    "responsibilities": "Responsibilities include developing and implementing user-friendly web applications...",
+    "educationRequirements": "Bachelor's or Master's degree in Computer Science or related field",
+    "experienceRequirements": "Minimum of 3 years of experience in frontend development",
     "contact": {
       "phone": "+44 20 1234 5678",
       "email": "careers@webinnovations.com"
@@ -93,9 +93,9 @@
     "location": "Singapore",
     "salary": "$80,000 - $120,000",
     "description": "We are looking for a Cloud Architect to join our team...",
-    "responsibility": "Responsibilities include designing and implementing scalable cloud solutions...",
-    "education": "Bachelor's or Master's degree in Computer Science or related field",
-    "experience": "Minimum of 7 years of experience in cloud architecture",
+    "responsibilities": "Responsibilities include designing and implementing scalable cloud solutions...",
+    "educationRequirements": "Bachelor's or Master's degree in Computer Science or related field",
+    "experienceRequirements": "Minimum of 7 years of experience in cloud architecture",
     "contact": {
       "phone": "+65 9876 5432",
       "email": "careers@cloudco.com"

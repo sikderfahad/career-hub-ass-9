@@ -1,6 +1,6 @@
 import React from "react";
 import "./JobDetailsPage.css";
-import { useLoaderData, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDays,
@@ -11,11 +11,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { addToDb } from "../MyDb/MyDb";
 
+import allData from "../../../public/data.json";
+
 const JobDetailsPage = () => {
   const getLocation = useLocation();
   const cartId = new URLSearchParams(getLocation.search).get("cartId");
 
-  const allData = useLoaderData();
   const findJobInfo = allData.find((item) => item.id === +cartId);
 
   const {
@@ -30,8 +31,11 @@ const JobDetailsPage = () => {
     contact,
   } = findJobInfo;
 
+  const navigate = useNavigate();
+
   const handledApplyNow = (id) => {
     addToDb(id);
+    navigate(`/applied-jobs/${id}`);
   };
 
   console.log(findJobInfo);

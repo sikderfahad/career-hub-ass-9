@@ -1,0 +1,18 @@
+.job-type-btn {
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #7e90fe;
+  padding: 4px 12px;
+  border-radius: 5px;
+}
+
+.card-btn {
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: white;
+  font-weight: 500;
+}
