@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "logo": "../src/assets/img/Logo/google-1-11.png",
+    "job": "Backend Developer",
+    "company": "Tech Solutions",
+    "type": ["Remote", "Full Time"],
+    "location": "San Francisco, CA",
+    "salary": "$120,000 - $180,000",
+    "description": "We are looking for a skilled software engineer to join our team at Google. The ideal candidate will have experience developing scalable software systems and will be comfortable working in a fast-paced environment.",
+    "responsibilities": "Design, develop, test, deploy, maintain and improve software. Collaborate with cross-functional teams to define, design, and ship new features. Work with outside data sources and APIs. Write clean and maintainable code.",
+    "educationRequirements": "Bachelor's degree in Computer Science or related technical field.",
+    "experienceRequirements": "Minimum of 3 years of relevant software engineering experience.",
+    "contact": {
+      "phone": "(123) 456-7890",
+      "email": "careers@techsolutions.com"
+    }
+  },
+  {
+    "id": 2,
+    "logo": "../src/assets/img/Logo/google-1-11.png",
+    "job": "Full Stack Developer",
+    "company": "ABC Corp",
+    "type": ["Onsite", "Remote"],
+    "location": "New York, NY",
+    "salary": "$100,000 - $150,000",
+    "description": "We are seeking an experienced iOS developer to join our team at Apple. The ideal candidate will have a passion for creating innovative, world-class apps that enrich the lives of millions of users worldwide.",
+    "responsibilities": "Design and develop high-quality, reusable code for iOS applications. Collaborate with cross-functional teams to define, design, and ship new features. Continuously discover, evaluate, and implement new technologies to maximize development efficiency.",
+    "educationRequirements": "Bachelor's or Master's degree in Computer Science or related field.",
+    "experienceRequirements": "Minimum of 5 years of experience in iOS development.",
+    "contact": {
+      "phone": "(212) 123-4567",
+      "email": "jobs@abccorp.com"
+    }
+  },
+  {
+    "id": 3,
+    "logo": "../src/assets/img/Logo/google-1-11.png",
+    "job": "UI/UX Designer",
+    "company": "Design Co",
+    "type": ["Remote", "Onsite"],
+    "location": "Paris, France",
+    "salary": "$150,000 - $200,000",
+    "description": "We are seeking a Cloud Solutions Architect to help drive the design, development, and delivery of our cloud-based solutions at Microsoft. The ideal candidate will be passionate about solving complex business problems and will have extensive experience designing and deploying cloud-based solutions.",
+    "responsibilities": "Design, develop, and deploy cloud-based solutions that meet customer requirements. Collaborate with customers to define and document their cloud architecture requirements. Develop best practices and guidelines for cloud-based development.",
+    "educationRequirements": "Bachelor's or Master's degree in Computer Science, Engineering, or related field.",
+    "experienceRequirements": "Minimum of 7 years of experience in designing and deploying cloud-based solutions.",
+    "contact": {
+      "phone": "+33 1 23 45 67 89",
+      "email": "jobs@designco.com"
+    }
+  },
+  {
+    "id": 4,
+    "logo": "../src/assets/img/Logo/google-1-11.png",
+    "job": "Data Scientist",
+    "company": "Analytics Inc",
+    "type": ["Full Time", "Onsite"],
+    "location": "Toronto, Canada",
+    "salary": "$80,000 - $100,000",
+    "description": "We are seeking a data scientist to join our analytics team...",
+    "responsibility": "Responsibilities include developing and implementing data models and algorithms...",
+    "education": "Master's or PhD in Mathematics, Statistics or related field",
+    "experience": "Minimum of 5 years of experience in data science",
+    "contact": {
+      "phone": "+1 416-123-4567",
+      "email": "careers@analyticsinc.com"
+    }
+  },
+  {
+    "id": 5,
+    "logo": "../src/assets/img/Logo/google-1-11.png",
+    "job": "Frontend Developer",
+    "company": "Web Innovations",
+    "type": ["Full Time", "Remote"],
+    "location": "London, UK",
+    "salary": "$60,000 - $80,000",
+    "description": "We are looking for a skilled frontend developer to join our team...",
+    "responsibility": "Responsibilities include developing and implementing user-friendly web applications...",
+    "education": "Bachelor's or Master's degree in Computer Science or related field",
+    "experience": "Minimum of 3 years of experience in frontend development",
+    "contact": {
+      "phone": "+44 20 1234 5678",
+      "email": "careers@webinnovations.com"
+    }
+  },
+  {
+    "id": 6,
+    "logo": "../src/assets/img/Logo/google-1-11.png",
+    "job": "Cloud Architect",
+    "company": "Cloud Co",
+    "type": ["Remote", "Onsite"],
+    "location": "Singapore",
+    "salary": "$80,000 - $120,000",
+    "description": "We are looking for a Cloud Architect to join our team...",
+    "responsibility": "Responsibilities include designing and implementing scalable cloud solutions...",
+    "education": "Bachelor's or Master's degree in Computer Science or related field",
+    "experience": "Minimum of 7 years of experience in cloud architecture",
+    "contact": {
+      "phone": "+65 9876 5432",
+      "email": "careers@cloudco.com"
+    }
+  }
+]
