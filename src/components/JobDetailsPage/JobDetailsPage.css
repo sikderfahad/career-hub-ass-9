@@ -35,3 +35,14 @@
   color: white;
   font-weight: 500;
 }
+
+.additional {
+  background: url(../../assets/img/Logo/Vector.png),
+    linear-gradient(
+      90deg,
+      rgba(126, 144, 254, 0.05) 0%,
+      rgba(152, 115, 255, 0.05) 100%
+    );
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}

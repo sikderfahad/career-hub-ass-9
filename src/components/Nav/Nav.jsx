@@ -2,10 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
-const Nav = ({ route }) => {
+const Nav = ({ route, setBg }) => {
   return (
     <li className="block md:inline md:mx-3">
       <NavLink
+        onClick={setBg}
         className={({ isActive, isPending }) =>
           isActive
             ? "active"

@@ -40,6 +40,9 @@ const JobDetailsPage = () => {
 
   return (
     <div>
+      <div className="w-full h-[250px] additional flex items-center justify-center">
+        <h1 className="text-5xl font-bold w-fit">Job Details</h1>
+      </div>
       <div className="details-container w-10/12 mx-auto mb-10">
         <div className="requirement-box flex flex-col gap-6">
           <div className="description">
