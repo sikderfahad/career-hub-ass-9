@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import SiteBtn from "../SiteBtn/SiteBtn";
 import "./Header.css";
 import Nav from "../Nav/Nav";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnchor, faPowerOff } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const routes = [
@@ -10,20 +12,43 @@ const Header = () => {
     { path: "/applied-jobs", label: "Applied Jobs" },
     { path: "/blog", label: "Blog" },
   ];
+
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="py-14 header">
-      <nav className="w-10/12 mx-auto flex items-center justify-between">
+    <header className="md:py-14 py-6 header">
+      <nav className="md:w-10/12 w-11/12 mx-auto flex items-center justify-between">
         <div className="logo">
           <h1 className="text-3xl font-bold text-[#1A1919]">CareerHub</h1>
         </div>
         <div className="mebubar">
-          <ul>
+          <div
+            className="md:hidden"
+            onMouseEnter={() => setOpen(!open)}
+            onMouseLeave={() => setOpen(!open)}
+            onClick={() => setOpen(!open)}
+          >
+            <span className="text-2xl">
+              {open ? (
+                <FontAwesomeIcon icon={faAnchor}></FontAwesomeIcon>
+              ) : (
+                <FontAwesomeIcon icon={faPowerOff}></FontAwesomeIcon>
+              )}
+            </span>
+          </div>
+          <ul
+            className={`md:static absolute right-0 ${
+              open ? "top-16" : "-top-96"
+            }  md:bg-transparent bg-gray-200 p-4 rounded-md duration-200`}
+          >
             {routes.map((route, idx) => (
               <Nav route={route} key={idx}></Nav>
             ))}
           </ul>
         </div>
-        <SiteBtn>Start Applying</SiteBtn>
+        <div className="md:inline-block hidden">
+          <SiteBtn>Start Applying</SiteBtn>
+        </div>
       </nav>
     </header>
   );

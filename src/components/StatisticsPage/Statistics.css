@@ -1,0 +1,5 @@
+.chart-heading {
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

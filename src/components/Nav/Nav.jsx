@@ -4,10 +4,14 @@ import "./Nav.css";
 
 const Nav = ({ route }) => {
   return (
-    <li className="inline mx-3">
+    <li className="block md:inline md:mx-3">
       <NavLink
         className={({ isActive, isPending }) =>
-          isActive ? "active" : isPending ? "pending" : "text-[#757575] navLink"
+          isActive
+            ? "active"
+            : isPending
+            ? "pending"
+            : "text-[#757575] navLink md:inline block"
         }
         to={route.path}
       >
