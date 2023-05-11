@@ -16,22 +16,26 @@ const FeaturedJobItem = ({ item }) => {
     navigate(`/job-details?cartId=${id}`);
   };
   return (
-    <div className="border rounded-lg shadow p-10">
+    <div className="border rounded-lg shadow lg:p-10 p-5 lg:text-left text-center lg:flex-none flex- flex-col">
       <div className="thumb">
-        <img className="w-[200px]" src={logo} alt="" />
+        <img
+          className="lg:w-[200px] w-10/12 lg:mx-0 mx-auto"
+          src={logo}
+          alt=""
+        />
       </div>
       <div className="div my-6">
         <h1 className="text-[#474747] text-2xl font-bold">{job}</h1>
         <p className="text-[#757575] text-xl font-semibold">{company}</p>
       </div>
-      <div className="type flex gap-6">
+      <div className="type flex gap-6 items-center justify-center lg:items-start lg:justify-normal">
         {type.map((btn, idx) => (
           <button key={idx} className="job-type-btn font-medium">
             {btn}
           </button>
         ))}
       </div>
-      <div className="location flex gap-6 text-[#757575] text-lg font-semibold my-4">
+      <div className="location flex lg:flex-row flex-col gap-6 text-[#757575] text-lg font-semibold my-4">
         <p>
           <FontAwesomeIcon icon={faMapMarkedAlt}></FontAwesomeIcon>{" "}
           <span>{location}</span>
@@ -41,7 +45,10 @@ const FeaturedJobItem = ({ item }) => {
           <span>{salary}</span>
         </p>
       </div>
-      <button onClick={handledJobDetailsBtn} className="card-btn">
+      <button
+        onClick={handledJobDetailsBtn}
+        className="card-btn lg:mt-6 mt-auto"
+      >
         View Details
       </button>
     </div>

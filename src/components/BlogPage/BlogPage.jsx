@@ -1,5 +1,6 @@
 import React from "react";
 import "./BlogPage.css";
+import BlogItem from "../BlogItem/BlogItem";
 
 const BlogPage = () => {
   const blogs = [
@@ -21,8 +22,12 @@ const BlogPage = () => {
     },
   ];
   return (
-    <div className="">
-      <div className="md:w-10/12 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-8"></div>
+    <div className="overflow-hidden">
+      <div className="md:w-10/12 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 my-8">
+        {blogs.map((blog, idx) => (
+          <BlogItem blog={blog} key={idx}></BlogItem>
+        ))}
+      </div>
     </div>
   );
 };

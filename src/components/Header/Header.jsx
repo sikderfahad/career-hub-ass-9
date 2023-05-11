@@ -10,7 +10,7 @@ const Header = () => {
     { path: "/", label: "Home" },
     { path: "/statistics", label: "Statistics" },
     { path: "/applied-jobs", label: "Applied Jobs" },
-    { path: "/blog", label: "Blog" },
+    { path: "/blogs", label: "Blog" },
   ];
 
   const [open, setOpen] = useState(false);
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
         <div className="mebubar">
           <div
-            className="md:hidden"
+            className="lg:hidden"
             onMouseEnter={() => setOpen(!open)}
             onMouseLeave={() => setOpen(!open)}
             onClick={() => setOpen(!open)}
@@ -37,16 +37,16 @@ const Header = () => {
             </span>
           </div>
           <ul
-            className={`md:static absolute right-0 ${
-              open ? "top-16" : "-top-96"
-            }  md:bg-transparent bg-gray-200 p-4 rounded-md duration-200`}
+            className={`lg:static absolute right-0 ${
+              open ? "top-16 md:top-12" : "-top-96"
+            }  lg:bg-transparent bg-gray-200 p-4 rounded-md duration-200`}
           >
             {routes.map((route, idx) => (
               <Nav route={route} key={idx}></Nav>
             ))}
           </ul>
         </div>
-        <div className="md:inline-block hidden">
+        <div className="lg:inline-block hidden">
           <SiteBtn>Start Applying</SiteBtn>
         </div>
       </nav>

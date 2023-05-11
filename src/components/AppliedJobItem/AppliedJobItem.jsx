@@ -24,16 +24,18 @@ const AppliedJobItem = ({ item }) => {
         <div className="">
           <div className="">
             <h1 className="text-[#474747] text-2xl font-semibold">{job}</h1>
-            <p className="text-[#757575] text-lg font-semibold">{company}</p>
+            <p className="text-[#757575] text-lg font-semibold mt-2">
+              {company}
+            </p>
           </div>
-          <div className="type flex gap-6">
+          <div className="type flex gap-6 mt-4">
             {type.map((btn, idx) => (
               <button key={idx} className="job-type-btn font-medium">
                 {btn}
               </button>
             ))}
           </div>
-          <div className="location flex gap-6 text-[#757575] text-lg font-semibold my-4">
+          <div className="location flex gap-6 text-[#757575] text-lg font-semibold mt-6">
             <p>
               <FontAwesomeIcon icon={faMapMarkedAlt}></FontAwesomeIcon>{" "}
               <span>{location}</span>

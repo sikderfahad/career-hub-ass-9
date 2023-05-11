@@ -4,8 +4,8 @@ import "./JobCatagoryItem.css";
 const JobCatagoryItem = ({ catagory }) => {
   const { icon, catName, jobCount } = catagory;
   return (
-    <div className="cat-item">
-      <div className="cat-thumb">
+    <div className="cat-item md:text-left text-center">
+      <div className="cat-thumb mx-auto md:mx-0">
         <img src={icon} className="w-full" alt="" />
       </div>
       <div className="cat-info mt-8">
