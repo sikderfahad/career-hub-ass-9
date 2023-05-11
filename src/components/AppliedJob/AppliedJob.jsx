@@ -3,32 +3,41 @@ import { getJobCart, storeClean } from "../MyDb/MyDb";
 import AppliedJobItem from "../AppliedJobItem/AppliedJobItem";
 import allData from "../../../public/data.json";
 import BtnDropdown from "../BtnDropdown/BtnDropdown";
+import { filteredData } from "./AppliedJobFunc";
 
 const AppliedJob = () => {
-  let matchingData = [];
-  const preAppliedData = getJobCart();
-  for (const jobId in preAppliedData) {
-    const getStoredData = allData.find((pd) => pd.id === +jobId);
-    matchingData.push(getStoredData);
-  }
+  const getData = filteredData();
+
+  const [finalData, setFinalData] = useState(getData);
 
   const handledStoreClear = () => {
-    matchingData.length = 0;
+    finalData.length = 0;
     storeClean();
     window.location.reload();
   };
+
+  const handledFilterBtn = (event) => {
+    const target = event.target.value;
+    let findData = [];
+    for (const item of getData) {
+      const matchItem = item.type.includes(target);
+      matchItem && findData.push(item);
+    }
+    setFinalData(findData);
+  };
+
   return (
     <div className="w-10/12 mx-auto">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl text-purple-600 font-semibold my-8">
-          You applied {matchingData.length} jobs!
+          You applied {finalData.length} jobs!
         </h1>
         {/*  */}
-        <BtnDropdown></BtnDropdown>
+        <BtnDropdown filter={handledFilterBtn}></BtnDropdown>
         {/*  */}
       </div>
       <div className="grid grid-cols-1 gap-6 my-12">
-        {matchingData.map((item) => (
+        {finalData.map((item) => (
           <AppliedJobItem item={item} key={item.id}></AppliedJobItem>
         ))}
       </div>

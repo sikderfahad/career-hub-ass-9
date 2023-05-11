@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./JobDetailsPage.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

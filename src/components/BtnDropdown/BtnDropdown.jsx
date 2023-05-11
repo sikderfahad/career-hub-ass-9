@@ -1,6 +1,6 @@
 import React from "react";
 
-const BtnDropdown = () => {
+const BtnDropdown = ({ filter }) => {
   return (
     <>
       <button
@@ -11,7 +11,7 @@ const BtnDropdown = () => {
         className="text-[#474747] bg-[#F4F4F4] shadow-lg focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center "
         type="button"
       >
-        Dropdown hover{" "}
+        Filter By{" "}
         <svg
           className="w-4 h-4 ml-2"
           aria-hidden="true"
@@ -38,28 +38,31 @@ const BtnDropdown = () => {
           aria-labelledby="dropdownHoverButton"
         >
           <li>
-            <a
-              href="#"
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            <button
+              onClick={filter}
+              value={"Onsite"}
+              className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Onsite
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#"
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            <button
+              onClick={filter}
+              value={"Full Time"}
+              className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Full Time
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#"
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            <button
+              onClick={filter}
+              value={"Remote"}
+              className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Remote
-            </a>
+            </button>
           </li>
         </ul>
       </div>

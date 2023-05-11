@@ -30,6 +30,7 @@ const router = createBrowserRouter([
       {
         path: "/applied-jobs",
         element: <AppliedJob></AppliedJob>,
+        // loader: getMatchingData,
       },
       {
         path: "/blogs",
