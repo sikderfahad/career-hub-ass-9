@@ -3,3 +3,17 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.mark-chart {
+  position: relative;
+  animation: markChartAnimate 1s ease-in 0s 1;
+}
+
+@keyframes markChartAnimate {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

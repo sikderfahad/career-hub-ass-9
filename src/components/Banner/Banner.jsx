@@ -5,7 +5,7 @@ import coverPic from "../../assets/img/All Images/Cover-pic.png";
 
 const Banner = () => {
   return (
-    <div className="w-full main-banner">
+    <div className="w-full main-banner overflow-hidden">
       <div className="lg:w-10/12 w-11/12 mx-auto flex lg:flex-row flex-col lg:items-center lg:justify-between gap-20">
         <div className="banner-content lg:w-6/12 lg:text-left text-center lg:mt-0 mt-4">
           <h1 className="md:text-7xl text-4xl font-bold text-[#1a1919]">
@@ -18,7 +18,7 @@ const Banner = () => {
           </p>
           <SiteBtn>Get Started</SiteBtn>
         </div>
-        <div className="lg:w-6/12">
+        <div className="lg:w-6/12 banner-cover">
           <img className="rounded-lg w-full" src={coverPic} alt="" />
         </div>
       </div>

@@ -5,3 +5,7 @@
     rgba(152, 115, 255, 0.05) 100%
   );
 }
+
+.header-bg {
+  background: url(../../assets/img/All\ Images/);
+}

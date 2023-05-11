@@ -8,6 +8,8 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
   ResponsiveContainer,
+  Tooltip,
+  Legend,
 } from "recharts";
 
 const Statistics = () => {
@@ -48,14 +50,16 @@ const Statistics = () => {
       <h1 className="text-3xl font-bold text-center mt-10 chart-heading">
         My Job Assignment Marks Chart is Here!
       </h1>
-      <div className="md:w-6/12 w-10/12 h-[400px] mx-auto mt-8">
+      <div className="md:w-6/12 w-10/12 h-[400px] mx-auto mt-8 mark-chart">
         <ResponsiveContainer width={"100%"} height={"100%"}>
           <RadarChart cx={"50%"} cy={"50%"} outerRadius={"80%"} data={data}>
             <PolarGrid stroke="#000" strokeOpacity={0.6}></PolarGrid>
             <PolarAngleAxis dataKey={"subject"}></PolarAngleAxis>
             <PolarRadiusAxis></PolarRadiusAxis>
+            <Tooltip></Tooltip>
+            <Legend></Legend>
             <Radar
-              name="Mike"
+              name="Marks"
               dataKey={"Marks"}
               stroke="#9873ff"
               fill="#7e90fe"

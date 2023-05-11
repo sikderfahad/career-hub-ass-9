@@ -16,3 +16,31 @@
     rgba(152, 115, 255, 0.05) 100%
   );
 }
+
+.banner-content {
+  position: relative;
+  animation: bannerAnimateLeft 1s ease-in 0s 1;
+}
+
+@keyframes bannerAnimateLeft {
+  0% {
+    left: -50rem;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.banner-cover {
+  position: relative;
+  animation: bannerAnimateRight 1s ease-in 0s 1;
+}
+
+@keyframes bannerAnimateRight {
+  0% {
+    right: -50rem;
+  }
+  100% {
+    right: 0;
+  }
+}

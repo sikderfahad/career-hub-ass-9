@@ -16,3 +16,17 @@
   color: white;
   font-weight: 500;
 }
+
+.applied-job {
+  position: relative;
+  animation: jobCardAnimate 1s ease-in 0s 1;
+}
+
+@keyframes jobCardAnimate {
+  0% {
+    left: -100rem;
+  }
+  100% {
+    left: 0;
+  }
+}

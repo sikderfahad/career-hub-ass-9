@@ -16,7 +16,7 @@ const AppliedJobItem = ({ item }) => {
     navigate(`/job-details?cartId=${id}`);
   };
   return (
-    <div className="border shadow rounded-lg p-7 flex items-center justify-between gap-8">
+    <div className="applied-job border shadow rounded-lg p-7 flex items-center justify-between gap-8">
       <div className="thumb bg-[#F4F4F4] w-[240px] h-[240px] rounded-lg flex items-center justify-center p-6">
         <img className="" src={logo} alt="" />
       </div>
