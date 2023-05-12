@@ -15,7 +15,10 @@ const DropDown = ({ filter }) => {
 
   return (
     <div className="dropdown-container">
-      <button className="dropdown-button" onClick={handleButtonClick}>
+      <button
+        className="dropdown-button font-semibold text-lg"
+        onClick={handleButtonClick}
+      >
         Filter By{" "}
         <span className="dropdown-arrow duration-150">
           {isOpen ? "▲" : "▼"}
