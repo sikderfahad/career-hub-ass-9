@@ -43,7 +43,7 @@ const Header = () => {
             </span>
           </div>
           <ul
-            className={`lg:static absolute right-0 ${
+            className={`lg:static  z-[999] absolute right-0 ${
               open ? "top-16 md:top-12" : "-top-96"
             }  lg:bg-transparent bg-gray-200 p-4 rounded-md duration-200`}
           >

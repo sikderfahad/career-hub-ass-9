@@ -10,6 +10,8 @@ import {
   ResponsiveContainer,
   Tooltip,
   Legend,
+  XAxis,
+  YAxis,
 } from "recharts";
 
 const Statistics = () => {
