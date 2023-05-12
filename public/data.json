@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "logo": "../src/assets/img/Logo/google-1-11.png",
+    "logo": "https://645dc54ae0d7ab431278bf02--dulcet-licorice-86970d.netlify.app/img/google-1-11.png",
     "job": "Backend Developer",
     "company": "Google LLC",
     "type": ["Remote", "Full Time"],
@@ -18,7 +18,7 @@
   },
   {
     "id": 2,
-    "logo": "../src/assets/img/Logo/netflix-41.png",
+    "logo": "https://645dc54ae0d7ab431278bf02--dulcet-licorice-86970d.netlify.app/img/netflix-41.png",
     "job": "Full Stack Developer",
     "company": "Netflix",
     "type": ["Onsite", "Remote"],
@@ -35,7 +35,7 @@
   },
   {
     "id": 3,
-    "logo": "../src/assets/img/Logo/tesla.png",
+    "logo": "https://645dc54ae0d7ab431278bf02--dulcet-licorice-86970d.netlify.app/img/tesla.png",
     "job": "Software Engineer",
     "company": "Tesla",
     "type": ["Remote", "Onsite"],
@@ -52,7 +52,7 @@
   },
   {
     "id": 4,
-    "logo": "../src/assets/img/Logo/amazpn.png",
+    "logo": "https://645dc54ae0d7ab431278bf02--dulcet-licorice-86970d.netlify.app/img/amazpn.png",
     "job": "Data Scientist",
     "company": "Amazon Inc",
     "type": ["Full Time", "Onsite"],
@@ -69,7 +69,7 @@
   },
   {
     "id": 5,
-    "logo": "../src/assets/img/Logo/chatGPT.png",
+    "logo": "https://645dc54ae0d7ab431278bf02--dulcet-licorice-86970d.netlify.app/img/chatGPT.png",
     "job": "Frontend Developer",
     "company": "Web Innovations",
     "type": ["Full Time", "Remote"],
@@ -86,7 +86,7 @@
   },
   {
     "id": 6,
-    "logo": "../src/assets/img/Logo/twetter.png",
+    "logo": "https://645dc54ae0d7ab431278bf02--dulcet-licorice-86970d.netlify.app/img/twetter.png",
     "job": "Cloud Architect",
     "company": "Twitter",
     "type": ["Remote", "Onsite"],

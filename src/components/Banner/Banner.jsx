@@ -1,7 +1,7 @@
 import React from "react";
 import "./Banner.css";
 import SiteBtn from "../SiteBtn/SiteBtn";
-import coverPic from "../../assets/img/All Images/Cover-pic.png";
+import coverPic from "../../assets/img/Logo/Cover-pic.png";
 
 const Banner = () => {
   return (

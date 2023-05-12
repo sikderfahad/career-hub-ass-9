@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { getJobCart, storeClean } from "../MyDb/MyDb";
 import AppliedJobItem from "../AppliedJobItem/AppliedJobItem";
 import allData from "../../../public/data.json";
-import BtnDropdown from "../BtnDropdown/BtnDropdown";
 import { filteredData } from "./AppliedJobFunc";
+import DropDown from "../DropDown/DropDown";
 
 const AppliedJob = () => {
   const getData = filteredData();
@@ -37,7 +37,7 @@ const AppliedJob = () => {
             You applied {finalData.length} jobs!
           </h1>
           {/*  */}
-          <BtnDropdown filter={handledFilterBtn}></BtnDropdown>
+          <DropDown filter={handledFilterBtn}></DropDown>
           {/*  */}
         </div>
         <div className="grid grid-cols-1 gap-6 my-12">

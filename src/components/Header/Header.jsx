@@ -23,7 +23,9 @@ const Header = () => {
     <header className={`md:py-14 py-6 header ${isBg && "header-bg"}`}>
       <nav className="md:w-10/12 w-11/12 mx-auto flex items-center justify-between">
         <div className="logo">
-          <h1 className="text-3xl font-bold text-[#1A1919]">CareerHub</h1>
+          <h1 className=" text-3xl font-bold text-[#1A1919]">
+            <span className="logo-animate">Job</span> <span>Portal</span>
+          </h1>
         </div>
         <div className="mebubar">
           <div
